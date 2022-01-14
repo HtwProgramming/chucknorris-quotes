@@ -16,7 +16,7 @@ Sie werden im Rahmen dieser Aufgabe eine simple Webanwendung implementieren, die
 
 1. Forken und Clonen Sie dieses Repository
 
-2. Starten Sie die Spring Boot Anwendung. Rufen Sie in Ihrem Browser oder Postman die URL `http://localhost:8080/actuator/health` auf. Wird Ihnen `{"status":"UP"}` angezeigt, ist Ihre Anwendung erfolgreich gestartet.
+2. Starten Sie die Spring Boot Anwendung. Rufen Sie in Ihrem Browser oder Postman die URL [`http://localhost:8080/actuator/health`](http://localhost:8080/actuator/health) auf. Wird Ihnen `{"status":"UP"}` angezeigt, ist Ihre Anwendung erfolgreich gestartet.
 
 3. Starten Sie die Vue App. Führen Sie dazu, ausgehend vom Projektverzeichnis, folgende Befehle sequentiell aus:
 
@@ -26,7 +26,7 @@ npm install
 npm run serve
 ```
 
-4. Navigieren Sie in Ihrem Browser zur Adresse `http://localhost:3000`. Ihnen sollte die folgende Seite angezeigt werden:
+4. Navigieren Sie in Ihrem Browser zur Adresse [`http://localhost:3000`](http://localhost:3000). Ihnen sollte die folgende Seite angezeigt werden:
 
 <img width="1656" alt="Bildschirmfoto 2022-01-14 um 18 05 46" src="https://user-images.githubusercontent.com/81008192/149558236-0273d818-abb1-432a-8f50-7673361c8ccd.png">
 
@@ -38,13 +38,13 @@ npm run serve
 
     - der Controller soll die Implementierung des Interfaces `QuotesService` benutzen, um sich einen Chuck Norris Spruch zu holen
     - der Endpunkt soll unter `/api/v1/quotes` und via `GET` erreichbar sein
-    - der Client übermittelt den Index via Request-Parameter `index`, also z.B. `/rest/quote?index=53`
+    - der Client übermittelt den Index via Request-Parameter `index`, also z.B. `/api/v1/quotes?index=53`
     - Verwenden Sie für die Rückgabe die Klasse `QuoteResponse` (ggf. mit `ResponseEntity` als Wrapper)
     - der Endpunkt soll dem Client ein JSON liefern
     
 ### Frontend implementieren
 
-7. Es existiert mit der Komponente `ChuckNorrisQuote.vue` bereits eine Vue-Komponente, die aktuell jedoch keine Dynamik aufweist. Implementieren Sie die Methode `loadRandomQuote()`. Rufen Sie in der Methode Ihren Rest-Endpunkt auf. Verwenden Sie die Methode `getRandomInt()`, um Zufallszahlen zu erzeugen. Die Obergrenze muss 80 sein, da es nicht mehr Quotes im Backend gibt. Sobald die Seite neu geladen wird, soll ein neuer Spruch geladen und angezeigt werden.
+7. Es existiert mit der Komponente `ChuckNorrisQuote.vue` bereits eine Vue-Komponente, die aktuell jedoch keine Dynamik aufweist. Implementieren Sie die Methode `loadRandomQuote()`. Rufen Sie in der Methode Ihren Rest-Endpunkt auf. Verwenden Sie die Methode `getRandomInt()`, um Zufallszahlen zu erzeugen. Die Obergrenze `maxExclusive` muss 79 sein, da es nicht mehr Quotes im Backend gibt. Sobald die Seite neu geladen wird, soll ein neuer Spruch geladen und angezeigt werden.
 
 8. Erweitern Sie die Vue-Komponente wie folgt: Sobald der User auf Chuck Norris klickt, soll ein neuer Spruch angezeigt werden.
 
