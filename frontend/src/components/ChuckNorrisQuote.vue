@@ -31,6 +31,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+  width: 95%;
   margin: auto;
 }
 h1 {
@@ -43,5 +44,18 @@ h1 {
 }
 .quote {
   width: 50%;
+}
+
+@media screen and (max-width: 780px) {
+  .quote-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 100%;
+  }
+  .quote {
+    width: 100%;
+  }
 }
 </style>
