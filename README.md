@@ -28,7 +28,7 @@ npm run serve
 
 4. Navigieren Sie in Ihrem Browser zur Adresse `http://localhost:3000`. Ihnen sollte die folgende Seite angezeigt werden:
 
-TODO
+<img width="1656" alt="Bildschirmfoto 2022-01-14 um 18 05 46" src="https://user-images.githubusercontent.com/81008192/149558236-0273d818-abb1-432a-8f50-7673361c8ccd.png">
 
 ### Backend implementieren
 
@@ -58,6 +58,6 @@ TODO
 
 ### Unit Tests
 
-13. Implementieren Sie mind. 1 Unit-Test für das Frontend
+13. Implementieren Sie mind. 1 Unit-Test für das Frontend.
 
 14. Implementieren Sie mind. 1 Unit-Test für das Backend.
